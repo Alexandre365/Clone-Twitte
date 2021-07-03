@@ -1,0 +1,164 @@
+.MenuBar{
+    width: min(78px,100%);
+    height:100vh;
+    display: none;
+    text-align: center;
+}
+    .FixBar{
+        position: fixed;
+        width: 78px;
+        height: 100vh;
+        text-align: center;
+    }
+    .IconBar{
+        display: flex;
+        width: 200px;
+        margin-top: 30px;
+    }
+        .IconBar img{
+            width: 20px;
+            height: 20px;
+        }
+        .IconBar strong {
+            padding-left: 20px;
+            font-size: 19px;
+            color: var(--white);
+        }
+            .IconBarStrong{
+                display: none;
+            }
+    #Rectangle{
+        position: relative;
+        left: 30px;
+        background-color: var(--twitter);
+        border-radius: 25px;
+        width: 20px;
+        height: 20px;
+    }
+        #Rectangle strong{
+            display: none;
+        }
+
+    .BottomMenuBar{
+        position: fixed;
+        top: 100vh;
+    }
+        .PerfilMenuBar{
+            position: relative;
+            bottom: 50px;
+            left: 20px;
+            background-color: var(--gray);
+            border-radius: 25px;
+            width: 36px;
+            height: 36px;
+        }
+            .BottomMenuBar strong{
+                display: none;
+                position: relative;
+                bottom: 50px;
+                font-size: 14px;
+                color: var(--white);
+            }
+            .BottomMenuBar span{
+                display: none;
+                position: relative;
+                bottom: 50px;
+                font-size: 14px;
+                color: var(--gray);
+            }
+
+@media screen and (min-width: 600px) {
+    .MenuBar{
+        display: inline-block;
+    }
+    .FixBar{
+        width: 70px;
+        border-right: 1px solid var(--gray);
+    }
+    .IconBar{
+        position: relative;
+        left: 30px;
+    }
+
+}
+@media screen and (min-width: 630px) {
+    .FixBar{
+        width: 72.5px;
+    }
+}
+@media screen and (min-width: 660px) {
+    .FixBar{
+        width: 75px;
+    }
+}
+@media screen and (min-width: 680px) {
+    .FixBar{
+        width: 78px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .MenuBar{
+        width: min(280px,100%);
+        height:100vh;
+        display: inline-block;
+    
+    }
+    .FixBar{
+        position: fixed;
+        width: 279px;
+        border-right: 1px solid var(--gray);
+    }
+    .IconBar{
+        position: relative;
+        left: 40px;
+    }
+    .IconBarStrong{
+        display: inline-block;
+    }
+    #Rectangle{
+        position: relative;
+        left: 30px;
+        justify-content: center;
+
+        width: 230px;
+        height: 40px;
+    }
+    #Rectangle strong{
+        position: relative;
+        top: 5px;
+        right: 10px;
+        display: inline-block;
+    }
+    .BottomMenuBar{
+        position: fixed;
+        top: 100vh;
+    }
+        .PerfilMenuBar{
+            position: relative;
+            bottom: 75px;
+            left: 30px;
+        }
+            .BottomMenuBar strong{
+                display: inline-block;
+                position: relative;
+                bottom: 115px;
+                left: 75px;
+                font-size: 14px;
+                color: var(--white);
+            }
+            .BottomMenuBar span{
+                display: inline-block;
+                position: relative;
+                bottom: 100px;
+                right: 50px;
+                font-size: 14px;
+                color: var(--gray);
+            }
+            .BottomMenuBar img{
+                display: inline-block;
+                position: relative;
+                bottom: 100px;
+                right: 5px;
+            }
+}

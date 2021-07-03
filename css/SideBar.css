@@ -1,0 +1,87 @@
+.SideBar{
+    width: min(399px, 100%);
+    height:100vh;
+    display: none;
+    justify-content: center;
+} 
+    .SideFixed{
+        position: fixed;
+    }
+        .SearchBar{
+            width: 100%;
+        }
+            .SearchBar img{
+                position: absolute;
+                top: 19px;
+                left: 34px;
+            }
+            .SearchBar input{
+                position: relative;
+                top: 10px;
+                left: 24px;
+                width: 349px;
+                height: 39px;
+                padding-left: 40px ;
+                background-color: var(--search);
+                border-radius: 19.5px;
+                color: var(--gray);
+                font-size: 14px;
+                
+            }
+    .Panel {
+        position: relative;
+        top: 23px;
+        left: 24px;
+        margin-bottom: 10px;
+        background-color: var(--secondary);
+        border-radius: 14px;
+    }
+        .Panel h2{
+            font-size: 19px;
+            padding: 5px;
+            color: var(--white);
+        }
+        .Paneis{
+            display: flex;
+            padding: 10px;
+        }
+        #LinePaneis{
+            border-top: 1px solid var(--outline) ;
+        }
+        .Paneis button{
+            position: relative;
+            top: 10px;
+            left: 110px;
+            width: 78px;
+            height: 30px;
+            border: 1px solid var(--twitter);
+            color: var(--twitter);
+            box-sizing: border-box;
+            border-radius: 15.5px;
+        }
+        .RectanglePanel{
+            background-color: var(--gray);
+            border-radius: 24.5px;
+            width: 49px;
+            height: 49px; 
+        }
+        .PanelStrongSpan{
+            position: relative;
+            top: 5px;
+            left: 15px;
+            margin-bottom: 10px;
+        }
+        .PanelStrongSpan strong{
+            font-size: 14px;
+            color: var(--white);
+        }
+        .PanelStrongSpan span{
+            font-size: 14px;
+            color: var(--gray);
+        }
+
+@media screen and (min-width: 1000px) {
+    .SideBar{
+        display: inline-block;
+    }
+}

@@ -1,0 +1,210 @@
+.Main{
+    width: min(600px, 100%);
+    height:100vh;
+    background-color: var(--primary);
+
+    flex-direction: column;
+}
+    .PageHeader{
+        width: 100%;
+        height: 50px;
+    }
+        .PageHeader img{
+            padding: 10px;
+            width: 45px;
+            height: 45px;
+        }
+        .PageHeader strong {
+            position: relative;
+            bottom: 25px;
+            color: var(--white);
+        }
+        .PageHeader span{
+            position: relative;
+            bottom: 10px;
+            right: 140px;
+            color: var(--gray);
+        }
+    .BannerAndAvatar{
+        width: 100%;
+        height: 200px;
+    }
+        .Banner{
+            background-color: var(--twitter);
+            width: 100%;
+            height: 199px;
+        }
+        .BigAvatar{
+            position: relative;
+            bottom: 80px;
+
+
+            width: 135px;
+            height: 135px;
+            margin: 10px;
+
+            background-color: var(--gray);
+            border-radius: 68px;
+            border: 3.75px solid #000000;
+        }
+    .BellowBanner{
+        width: 100%;
+        height: 200px;
+    }
+        .OutlinedButton{
+            text-align: right;
+        } 
+            .OutlinedButton button{
+                position: relative;
+                top: 10px;
+                right: 17px;
+                width: 118px;
+                height: 39px;
+
+
+                color: var(--twitter);
+                border: 1px solid #33A1F2;
+                box-sizing: border-box;
+                border-radius: 19.5px;
+            }
+    .ProfilePageInfo{
+        position: relative;
+        top: 15px;
+
+        margin: 16px;
+    }
+        .ProfilePageInfo h1{
+            font-size: 19px;
+            color: var(--white);
+        }
+        .ProfilePageInfo h2{
+            font-size: 15px;
+            color: var(--gray);
+        }
+        .ProfilePageInfo p{
+            margin: 10px 0px 10px 0px;
+            color: var(--white);
+        }
+        .ProfilePageInfo ul {
+            list-style-type: none;
+            margin-bottom: 10px;
+        }
+            .ProfilePageInfo li{
+                font-size: 15px;
+                color: var(--gray);
+            }
+            .ProfilePageInfo span{
+                color: var(--gray);
+                font-size: 15px;
+                margin-right: 10px;
+            }
+            .ProfilePageInfo strong{
+                color: var(--white);
+            }
+    .TweetsAndLine{
+        position: relative;
+        top: 20px;
+
+        text-align: center;
+        border-bottom: 2px solid var(--twitter) ;
+    }
+        	.TweetsAndLine span{
+                color: var(--twitter);
+            }
+    .Tweet{
+        position: relative;
+        top: 30px;
+
+        width: 100%;
+        height: 360px;
+    }
+        .RetweetStatus{
+            color: var(--gray);
+            font-size: 13px;
+            margin-left: 50px;
+        }
+            .RetweetStatus img{
+                margin-right: 10px;
+            }
+        .Avatar{
+            border-radius: 50px;
+            background-color: var(--gray);
+            margin-left: 16px;
+            width: 49px;
+            height: 49px;
+        }
+        .TweetHeader{
+            position: absolute;
+            top: 20px;
+            left: 73px;
+        }
+            .TweetHeader span{
+                font-size: 15px;
+                color: var(--gray);
+            }
+            .TweetHeader strong{
+                font-size: 15px;
+                color: var(--white);
+            }
+            .TweetHeader{
+                font-size: 15px;
+                color: var(--white);
+            }
+        .TweetPicture{
+            position: absolute;
+            left: 75px;
+            top: 70px;
+            background-color: var(--gray);
+            width: 76%;
+            height: 200px;
+            text-align: center;
+        }
+            .Group{
+                position: relative;
+                top: 210px;
+                right:10px ;
+                color: var(--gray);
+            }
+            .Group span{
+                font-size: 15px;
+                padding: 20px 20px 20px 20px;
+            }
+            .Group  img{
+                position: relative;
+                top: 2px;
+            }
+    .BottomBarForMobile{
+        position: fixed;
+        top: 100vh;
+
+        width: 100%;
+    }
+        .BottomMobile{
+            position: relative;
+            bottom: 50px;
+            display: flex;
+            width: 100%;
+            border-top: 1px solid var(--outline) ;
+            background-color: var(--primary);
+            justify-content: center;
+        }
+        .BottomMobile div{
+            position: relative;
+            bottom: 0px;
+            padding: 10px 30px 10px 30px;
+        }
+
+        @media screen and (min-width: 600px) {
+            .Main{
+                height: 140vh;
+                border-right: 1px solid var(--gray);
+            }
+            .BottomBarForMobile{
+                display: none;
+            }
+            .Tweet{
+                border-bottom: 1px solid var(--outline) ;
+                height: 310px;
+            }
+
+        }
